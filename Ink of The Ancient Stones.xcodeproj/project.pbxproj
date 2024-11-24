@@ -7,18 +7,335 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8443BF452BB63AAB003FC940 /* Ink_of_The_Ancient_StonesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF442BB63AAB003FC940 /* Ink_of_The_Ancient_StonesApp.swift */; };
+		8441438B2C308D3A007BA2BE /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8441438A2C308D3A007BA2BE /* readme.md */; };
+		8441438D2C3098E0007BA2BE /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441438C2C3098E0007BA2BE /* UINavigationController.swift */; };
+		8441438F2C309B1D007BA2BE /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441438E2C309B1D007BA2BE /* CustomBackButton.swift */; };
+		844143912C30A23E007BA2BE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844143902C30A23E007BA2BE /* Data.swift */; };
+		844143952C30B2DA007BA2BE /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 844143922C30B2DA007BA2BE /* Poppins-Italic.ttf */; };
+		844143962C30B2DA007BA2BE /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 844143932C30B2DA007BA2BE /* Poppins-Bold.ttf */; };
+		844143972C30B2DA007BA2BE /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 844143942C30B2DA007BA2BE /* Poppins-Regular.ttf */; };
+		844143992C30B42A007BA2BE /* MuteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844143982C30B42A007BA2BE /* MuteButton.swift */; };
+		8443BF452BB63AAB003FC940 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF442BB63AAB003FC940 /* MyApp.swift */; };
 		8443BF472BB63AAB003FC940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF462BB63AAB003FC940 /* ContentView.swift */; };
 		8443BF492BB63AAC003FC940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8443BF482BB63AAC003FC940 /* Assets.xcassets */; };
 		8443BF4C2BB63AAC003FC940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8443BF4B2BB63AAC003FC940 /* Preview Assets.xcassets */; };
+		8443BF5B2BB63B49003FC940 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF5A2BB63B49003FC940 /* CustomAlertView.swift */; };
+		8443BF5D2BB63D2A003FC940 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF5C2BB63D2A003FC940 /* CustomButton.swift */; };
+		8443BF5F2BB63D46003FC940 /* CustomPageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF5E2BB63D46003FC940 /* CustomPageButton.swift */; };
+		8443BF612BB63D5C003FC940 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF602BB63D5C003FC940 /* InfoView.swift */; };
+		8443BF632BB63D75003FC940 /* NotePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF622BB63D75003FC940 /* NotePad.swift */; };
+		8443BF652BB63D8E003FC940 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF642BB63D8E003FC940 /* ScoreView.swift */; };
+		8443BF672BB63DA1003FC940 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF662BB63DA1003FC940 /* Stars.swift */; };
+		8443BF692BB63DB6003FC940 /* ToolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF682BB63DB6003FC940 /* ToolPicker.swift */; };
+		8443BF6B2BB63DC9003FC940 /* UndoRedoToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF6A2BB63DC9003FC940 /* UndoRedoToolbar.swift */; };
+		8443BF6E2BB63DE2003FC940 /* ModelPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF6D2BB63DE2003FC940 /* ModelPages.swift */; };
+		8443BF702BB63DF6003FC940 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF6F2BB63DF6003FC940 /* PageControl.swift */; };
+		8443BF722BB63E08003FC940 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF712BB63E08003FC940 /* Pages.swift */; };
+		8443BF742BB63E24003FC940 /* PagesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF732BB63E24003FC940 /* PagesBuilder.swift */; };
+		8443BF762BB63E2F003FC940 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF752BB63E2F003FC940 /* PageViewController.swift */; };
+		8443BF782BB63E51003FC940 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF772BB63E51003FC940 /* CGImagePropertyOrientation.swift */; };
+		8443BF7A2BB63E65003FC940 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF792BB63E65003FC940 /* CGPoint.swift */; };
+		8443BF7C2BB63E75003FC940 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF7B2BB63E75003FC940 /* Color.swift */; };
+		8443BF7E2BB63E8A003FC940 /* iPadFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF7D2BB63E8A003FC940 /* iPadFontSize.swift */; };
+		8443BF802BB63E9D003FC940 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF7F2BB63E9D003FC940 /* UIImage.swift */; };
+		8443BF822BB63EAF003FC940 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF812BB63EAF003FC940 /* UIScreen.swift */; };
+		8443BF842BB63EC5003FC940 /* VNClassificationObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF832BB63EC5003FC940 /* VNClassificationObservation.swift */; };
+		8443BF862BB63EDE003FC940 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF852BB63EDE003FC940 /* CustomColors.swift */; };
+		8443BF882BB63EF0003FC940 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF872BB63EF0003FC940 /* CustomFonts.swift */; };
+		8443BF8A2BB63F15003FC940 /* MayanGlyphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF892BB63F15003FC940 /* MayanGlyphs.swift */; };
+		8443BF8C2BB63F28003FC940 /* StoryPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF8B2BB63F28003FC940 /* StoryPart.swift */; };
+		8443BF8E2BB63F42003FC940 /* MayanScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF8D2BB63F42003FC940 /* MayanScript.swift */; };
+		8443BF912BB63F61003FC940 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF902BB63F61003FC940 /* SVGParser.swift */; };
+		8443BF932BB63F87003FC940 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF922BB63F87003FC940 /* SVGPath.swift */; };
+		8443BF952BB63FA2003FC940 /* SVGPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF942BB63FA2003FC940 /* SVGPathView.swift */; };
+		8443BF982BB64166003FC940 /* ImageComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF972BB64166003FC940 /* ImageComparator.swift */; };
+		8443BF9A2BB64190003FC940 /* GlyphCanvasStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF992BB64190003FC940 /* GlyphCanvasStoryView.swift */; };
+		8443BF9C2BB641A0003FC940 /* GlyphCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF9B2BB641A0003FC940 /* GlyphCanvasView.swift */; };
+		8443BF9E2BB641B4003FC940 /* GlyphsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BF9D2BB641B4003FC940 /* GlyphsListView.swift */; };
+		8443BFA12BB641D3003FC940 /* DrawingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFA02BB641D3003FC940 /* DrawingsView.swift */; };
+		8443BFA32BB641E8003FC940 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFA22BB641E8003FC940 /* EndView.swift */; };
+		8443BFA52BB641FA003FC940 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFA42BB641FA003FC940 /* IntroView.swift */; };
+		8443BFA72BB6420B003FC940 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFA62BB6420B003FC940 /* MenuView.swift */; };
+		8443BFA92BB64221003FC940 /* StoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFA82BB64221003FC940 /* StoryViews.swift */; };
+		8443BFAB2BB64259003FC940 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFAA2BB64259003FC940 /* AudioManager.swift */; };
+		8443BFAD2BB6426D003FC940 /* DrawingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFAC2BB6426D003FC940 /* DrawingsViewModel.swift */; };
+		8443BFAF2BB64282003FC940 /* GlyphsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFAE2BB64282003FC940 /* GlyphsListViewModel.swift */; };
+		8443BFB12BB64298003FC940 /* NotePadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFB02BB64298003FC940 /* NotePadViewModel.swift */; };
+		8443BFB32BB642AA003FC940 /* SVGDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443BFB22BB642AA003FC940 /* SVGDataStore.swift */; };
+		8443C0242BB64366003FC940 /* 1-na-b{}i.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFBC2BB64362003FC940 /* 1-na-b{}i.svg */; };
+		8443C0252BB64366003FC940 /* 1-wa-wa-aj-ni.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFBD2BB64362003FC940 /* 1-wa-wa-aj-ni.svg */; };
+		8443C0262BB64366003FC940 /* 2-hi.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFBE2BB64362003FC940 /* 2-hi.svg */; };
+		8443C0272BB64366003FC940 /* 1-o.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFBF2BB64362003FC940 /* 1-o.svg */; };
+		8443C0282BB64366003FC940 /* 1-tz{}a-pa-ji-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC02BB64362003FC940 /* 1-tz{}a-pa-ji-ya.svg */; };
+		8443C0292BB64366003FC940 /* 2-TAB{}-[yi].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC12BB64362003FC940 /* 2-TAB{}-[yi].svg */; };
+		8443C02A2BB64366003FC940 /* 4--[la]-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC22BB64362003FC940 /* 4--[la]-ja.svg */; };
+		8443C02B2BB64366003FC940 /* 0-NA@ka-KAN.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC32BB64362003FC940 /* 0-NA@ka-KAN.svg */; };
+		8443C02C2BB64366003FC940 /* 1-xa-XAN-na.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC42BB64362003FC940 /* 1-xa-XAN-na.svg */; };
+		8443C02D2BB64366003FC940 /* 3-cha-ki@CHAAN-na@$@cha-ki@KAAN-na.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC52BB64362003FC940 /* 3-cha-ki@CHAAN-na@$@cha-ki@KAAN-na.svg */; };
+		8443C02E2BB64366003FC940 /* 1-sa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC62BB64362003FC940 /* 1-sa.svg */; };
+		8443C02F2BB64366003FC940 /* 0-e.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC72BB64362003FC940 /* 0-e.svg */; };
+		8443C0302BB64366003FC940 /* 0-TA@OCH-le-{l}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC82BB64362003FC940 /* 0-TA@OCH-le-{l}.svg */; };
+		8443C0312BB64366003FC940 /* 3-tza-[ka].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFC92BB64363003FC940 /* 3-tza-[ka].svg */; };
+		8443C0322BB64366003FC940 /* 1-ma.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFCA2BB64363003FC940 /* 1-ma.svg */; };
+		8443C0332BB64366003FC940 /* 0-tz{}a-pa-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFCB2BB64363003FC940 /* 0-tz{}a-pa-ja.svg */; };
+		8443C0342BB64366003FC940 /* 1-e.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFCC2BB64363003FC940 /* 1-e.svg */; };
+		8443C0352BB64366003FC940 /* 2-U@B{}A.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFCD2BB64363003FC940 /* 2-U@B{}A.svg */; };
+		8443C0362BB64366003FC940 /* 4-a-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFCE2BB64363003FC940 /* 4-a-ya.svg */; };
+		8443C0372BB64366003FC940 /* 49-CH{}UL$K{}UL@(CH{}UJUL$K{}UJUL).svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFCF2BB64363003FC940 /* 49-CH{}UL$K{}UL@(CH{}UJUL$K{}UJUL).svg */; };
+		8443C0382BB64366003FC940 /* 1-cha-ki.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD02BB64363003FC940 /* 1-cha-ki.svg */; };
+		8443C0392BB64366003FC940 /* 0--ji-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD12BB64363003FC940 /* 0--ji-ya.svg */; };
+		8443C03A2BB64366003FC940 /* 1-ka.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD22BB64363003FC940 /* 1-ka.svg */; };
+		8443C03B2BB64366003FC940 /* 3-tz{}a-[pa]-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD32BB64363003FC940 /* 3-tz{}a-[pa]-ja.svg */; };
+		8443C03C2BB64366003FC940 /* 2-k{}a-K{}AWIL.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD42BB64363003FC940 /* 2-k{}a-K{}AWIL.svg */; };
+		8443C03D2BB64366003FC940 /* 0-AB{}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD52BB64363003FC940 /* 0-AB{}.svg */; };
+		8443C03E2BB64366003FC940 /* 2-ta-ji.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD62BB64363003FC940 /* 2-ta-ji.svg */; };
+		8443C03F2BB64366003FC940 /* 29-CHAK.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD72BB64363003FC940 /* 29-CHAK.svg */; };
+		8443C0402BB64366003FC940 /* 1-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD82BB64363003FC940 /* 1-ya.svg */; };
+		8443C0412BB64366003FC940 /* 2--la-ji.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFD92BB64363003FC940 /* 2--la-ji.svg */; };
+		8443C0422BB64366003FC940 /* 3--il.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFDA2BB64363003FC940 /* 3--il.svg */; };
+		8443C0432BB64366003FC940 /* 0-K{}A@CHAAN-na.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFDB2BB64363003FC940 /* 0-K{}A@CHAAN-na.svg */; };
+		8443C0442BB64366003FC940 /* 1-TA@yu-ta-{l}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFDC2BB64363003FC940 /* 1-TA@yu-ta-{l}.svg */; };
+		8443C0452BB64366003FC940 /* 1-ch{}a-b{}a.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFDD2BB64363003FC940 /* 1-ch{}a-b{}a.svg */; };
+		8443C0462BB64366003FC940 /* 0-tza.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFDE2BB64363003FC940 /* 0-tza.svg */; };
+		8443C0472BB64366003FC940 /* 1-k{}a-K{}AK{}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFDF2BB64363003FC940 /* 1-k{}a-K{}AK{}.svg */; };
+		8443C0482BB64366003FC940 /* 1-pa-k{}a-ji-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE02BB64363003FC940 /* 1-pa-k{}a-ji-ya.svg */; };
+		8443C0492BB64366003FC940 /* 2-tza-[ka].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE12BB64363003FC940 /* 2-tza-[ka].svg */; };
+		8443C04A2BB64366003FC940 /* 2-o.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE22BB64363003FC940 /* 2-o.svg */; };
+		8443C04B2BB64366003FC940 /* 0-.@.@.@wi-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE32BB64364003FC940 /* 0-.@.@.@wi-ya.svg */; };
+		8443C04C2BB64366003FC940 /* 0--la-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE42BB64364003FC940 /* 0--la-ja.svg */; };
+		8443C04D2BB64366003FC940 /* 1-TAB{}-[yi].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE52BB64364003FC940 /* 1-TAB{}-[yi].svg */; };
+		8443C04E2BB64366003FC940 /* 3-ch{}a-ji.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE62BB64364003FC940 /* 3-ch{}a-ji.svg */; };
+		8443C04F2BB64366003FC940 /* 1-U@.@.@.@wi.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE72BB64364003FC940 /* 1-U@.@.@.@wi.svg */; };
+		8443C0502BB64366003FC940 /* 3-e.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE82BB64364003FC940 /* 3-e.svg */; };
+		8443C0512BB64366003FC940 /* 2-tz{}a-[pa].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFE92BB64364003FC940 /* 2-tz{}a-[pa].svg */; };
+		8443C0522BB64366003FC940 /* 2-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFEA2BB64364003FC940 /* 2-ya.svg */; };
+		8443C0532BB64366003FC940 /* 0-pa-k{}a.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFEB2BB64364003FC940 /* 0-pa-k{}a.svg */; };
+		8443C0542BB64366003FC940 /* 1-AB{}-[b{}i].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFEC2BB64364003FC940 /* 1-AB{}-[b{}i].svg */; };
+		8443C0552BB64366003FC940 /* 3-TAB{}-[yi].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFED2BB64364003FC940 /* 3-TAB{}-[yi].svg */; };
+		8443C0562BB64366003FC940 /* 1--la-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFEE2BB64364003FC940 /* 1--la-ja.svg */; };
+		8443C0572BB64366003FC940 /* 4-B{}A@YAL.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFEF2BB64364003FC940 /* 4-B{}A@YAL.svg */; };
+		8443C0582BB64366003FC940 /* 0-.@.@.@ya-ni.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF02BB64364003FC940 /* 0-.@.@.@ya-ni.svg */; };
+		8443C0592BB64366003FC940 /* 2-sa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF12BB64364003FC940 /* 2-sa.svg */; };
+		8443C05A2BB64366003FC940 /* 3-pa-ka-la.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF22BB64364003FC940 /* 3-pa-ka-la.svg */; };
+		8443C05B2BB64366003FC940 /* 1-a-ja-wa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF32BB64364003FC940 /* 1-a-ja-wa.svg */; };
+		8443C05C2BB64366003FC940 /* 0-b{}a.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF42BB64364003FC940 /* 0-b{}a.svg */; };
+		8443C05D2BB64366003FC940 /* 3-wa-WA-ji.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF52BB64364003FC940 /* 3-wa-WA-ji.svg */; };
+		8443C05E2BB64366003FC940 /* 0-TAB{}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF62BB64364003FC940 /* 0-TAB{}.svg */; };
+		8443C05F2BB64366003FC940 /* 3-U@B{}A.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF72BB64364003FC940 /* 3-U@B{}A.svg */; };
+		8443C0602BB64366003FC940 /* 0-U@.@.@.@wa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF82BB64364003FC940 /* 0-U@.@.@.@wa.svg */; };
+		8443C0612BB64366003FC940 /* 2-ka.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFF92BB64364003FC940 /* 2-ka.svg */; };
+		8443C0622BB64366003FC940 /* 0-xa-ma-na.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFFA2BB64364003FC940 /* 0-xa-ma-na.svg */; };
+		8443C0632BB64366003FC940 /* 1-tza.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFFB2BB64364003FC940 /* 1-tza.svg */; };
+		8443C0642BB64366003FC940 /* 2-a-ku.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFFC2BB64364003FC940 /* 2-a-ku.svg */; };
+		8443C0652BB64366003FC940 /* 2-na-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFFD2BB64364003FC940 /* 2-na-ja.svg */; };
+		8443C0662BB64366003FC940 /* 0-cha-CHAN$ka-KAN.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFFE2BB64364003FC940 /* 0-cha-CHAN$ka-KAN.svg */; };
+		8443C0672BB64366003FC940 /* 0--il.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443BFFF2BB64364003FC940 /* 0--il.svg */; };
+		8443C0682BB64366003FC940 /* 2-ma.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0002BB64365003FC940 /* 2-ma.svg */; };
+		8443C0692BB64366003FC940 /* 2-cha-ki.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0012BB64365003FC940 /* 2-cha-ki.svg */; };
+		8443C06A2BB64366003FC940 /* 3-o.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0022BB64365003FC940 /* 3-o.svg */; };
+		8443C06B2BB64366003FC940 /* 0-ka.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0032BB64365003FC940 /* 0-ka.svg */; };
+		8443C06C2BB64366003FC940 /* 2-xa$XA.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0042BB64365003FC940 /* 2-xa$XA.svg */; };
+		8443C06D2BB64366003FC940 /* 2-wa-wa-aj-ni.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0052BB64365003FC940 /* 2-wa-wa-aj-ni.svg */; };
+		8443C06E2BB64366003FC940 /* 2--il.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0062BB64365003FC940 /* 2--il.svg */; };
+		8443C06F2BB64366003FC940 /* 0-sa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0072BB64365003FC940 /* 0-sa.svg */; };
+		8443C0702BB64366003FC940 /* 4--il.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0082BB64365003FC940 /* 4--il.svg */; };
+		8443C0712BB64366003FC940 /* 3-xa$XA.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0092BB64365003FC940 /* 3-xa$XA.svg */; };
+		8443C0722BB64366003FC940 /* 3-B{}A@u-xu-[lu].svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C00A2BB64365003FC940 /* 3-B{}A@u-xu-[lu].svg */; };
+		8443C0732BB64366003FC940 /* 0-ma.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C00B2BB64365003FC940 /* 0-ma.svg */; };
+		8443C0742BB64366003FC940 /* 1--ji-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C00C2BB64365003FC940 /* 1--ji-ya.svg */; };
+		8443C0752BB64366003FC940 /* 3-sa-aj-mi-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C00D2BB64365003FC940 /* 3-sa-aj-mi-ya.svg */; };
+		8443C0762BB64366003FC940 /* 1-B{}A@AJAW.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C00E2BB64365003FC940 /* 1-B{}A@AJAW.svg */; };
+		8443C0772BB64366003FC940 /* 3-na-ja-yi.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C00F2BB64365003FC940 /* 3-na-ja-yi.svg */; };
+		8443C0782BB64366003FC940 /* 34-JOL-lo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0102BB64365003FC940 /* 34-JOL-lo.svg */; };
+		8443C0792BB64366003FC940 /* 1--il.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0112BB64365003FC940 /* 1--il.svg */; };
+		8443C07A2BB64366003FC940 /* 3-a-li-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0122BB64365003FC940 /* 3-a-li-ya.svg */; };
+		8443C07B2BB64366003FC940 /* 3-JA{}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0132BB64365003FC940 /* 3-JA{}.svg */; };
+		8443C07C2BB64366003FC940 /* 3-ma.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0142BB64365003FC940 /* 3-ma.svg */; };
+		8443C07D2BB64366003FC940 /* 3--[la]-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0152BB64365003FC940 /* 3--[la]-ja.svg */; };
+		8443C07E2BB64366003FC940 /* 3-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0162BB64365003FC940 /* 3-ja.svg */; };
+		8443C07F2BB64366003FC940 /* 0-a-AK{}OT-ta.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0172BB64365003FC940 /* 0-a-AK{}OT-ta.svg */; };
+		8443C0802BB64366003FC940 /* 3-ya.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0182BB64365003FC940 /* 3-ya.svg */; };
+		8443C0812BB64366003FC940 /* 0-ch{}a.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0192BB64365003FC940 /* 0-ch{}a.svg */; };
+		8443C0822BB64366003FC940 /* 2-ch{}a-ja-{l}-te{}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C01A2BB64365003FC940 /* 2-ch{}a-ja-{l}-te{}.svg */; };
+		8443C0832BB64366003FC940 /* 3-ta-ki.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C01B2BB64365003FC940 /* 3-ta-ki.svg */; };
+		8443C0842BB64366003FC940 /* 3-k{}a-li.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C01C2BB64365003FC940 /* 3-k{}a-li.svg */; };
+		8443C0852BB64366003FC940 /* 2-pa-ka-b{}a.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C01D2BB64366003FC940 /* 2-pa-ka-b{}a.svg */; };
+		8443C0862BB64366003FC940 /* 2-ja.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C01E2BB64366003FC940 /* 2-ja.svg */; };
+		8443C0872BB64366003FC940 /* 2-B{}A@ch{}o-ko.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C01F2BB64366003FC940 /* 2-B{}A@ch{}o-ko.svg */; };
+		8443C0882BB64366003FC940 /* 39-IN@KAB{}.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0202BB64366003FC940 /* 39-IN@KAB{}.svg */; };
+		8443C0892BB64366003FC940 /* 2-e.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0212BB64366003FC940 /* 2-e.svg */; };
+		8443C08A2BB64366003FC940 /* 0-o.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0222BB64366003FC940 /* 0-o.svg */; };
+		8443C08B2BB64366003FC940 /* 4-ch{}a-jo-ma.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8443C0232BB64366003FC940 /* 4-ch{}a-jo-ma.svg */; };
+		8443C08E2BB64379003FC940 /* svg.json in Resources */ = {isa = PBXBuildFile; fileRef = 8443C08D2BB64379003FC940 /* svg.json */; };
+		8443C0902BB643B8003FC940 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8443C08F2BB643B8003FC940 /* music.mp3 */; };
+		84E058A22CF27E5B00FA1321 /* Ink-of-The-Ancient-Stones-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E058A12CF27E5B00FA1321 /* Ink-of-The-Ancient-Stones-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8441438A2C308D3A007BA2BE /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		8441438C2C3098E0007BA2BE /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		8441438E2C309B1D007BA2BE /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		844143902C30A23E007BA2BE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		844143922C30B2DA007BA2BE /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		844143932C30B2DA007BA2BE /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		844143942C30B2DA007BA2BE /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		844143982C30B42A007BA2BE /* MuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteButton.swift; sourceTree = "<group>"; };
 		8443BF412BB63AAB003FC940 /* Ink of The Ancient Stones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ink of The Ancient Stones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8443BF442BB63AAB003FC940 /* Ink_of_The_Ancient_StonesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ink_of_The_Ancient_StonesApp.swift; sourceTree = "<group>"; };
+		8443BF442BB63AAB003FC940 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		8443BF462BB63AAB003FC940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8443BF482BB63AAC003FC940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8443BF4B2BB63AAC003FC940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8443BF5A2BB63B49003FC940 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		8443BF5C2BB63D2A003FC940 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8443BF5E2BB63D46003FC940 /* CustomPageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageButton.swift; sourceTree = "<group>"; };
+		8443BF602BB63D5C003FC940 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		8443BF622BB63D75003FC940 /* NotePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePad.swift; sourceTree = "<group>"; };
+		8443BF642BB63D8E003FC940 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		8443BF662BB63DA1003FC940 /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		8443BF682BB63DB6003FC940 /* ToolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPicker.swift; sourceTree = "<group>"; };
+		8443BF6A2BB63DC9003FC940 /* UndoRedoToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoToolbar.swift; sourceTree = "<group>"; };
+		8443BF6D2BB63DE2003FC940 /* ModelPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPages.swift; sourceTree = "<group>"; };
+		8443BF6F2BB63DF6003FC940 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		8443BF712BB63E08003FC940 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		8443BF732BB63E24003FC940 /* PagesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesBuilder.swift; sourceTree = "<group>"; };
+		8443BF752BB63E2F003FC940 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		8443BF772BB63E51003FC940 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		8443BF792BB63E65003FC940 /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		8443BF7B2BB63E75003FC940 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8443BF7D2BB63E8A003FC940 /* iPadFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadFontSize.swift; sourceTree = "<group>"; };
+		8443BF7F2BB63E9D003FC940 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		8443BF812BB63EAF003FC940 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		8443BF832BB63EC5003FC940 /* VNClassificationObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNClassificationObservation.swift; sourceTree = "<group>"; };
+		8443BF852BB63EDE003FC940 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		8443BF872BB63EF0003FC940 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		8443BF892BB63F15003FC940 /* MayanGlyphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayanGlyphs.swift; sourceTree = "<group>"; };
+		8443BF8B2BB63F28003FC940 /* StoryPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPart.swift; sourceTree = "<group>"; };
+		8443BF8D2BB63F42003FC940 /* MayanScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayanScript.swift; sourceTree = "<group>"; };
+		8443BF902BB63F61003FC940 /* SVGParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGParser.swift; sourceTree = "<group>"; };
+		8443BF922BB63F87003FC940 /* SVGPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
+		8443BF942BB63FA2003FC940 /* SVGPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGPathView.swift; sourceTree = "<group>"; };
+		8443BF972BB64166003FC940 /* ImageComparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComparator.swift; sourceTree = "<group>"; };
+		8443BF992BB64190003FC940 /* GlyphCanvasStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlyphCanvasStoryView.swift; sourceTree = "<group>"; };
+		8443BF9B2BB641A0003FC940 /* GlyphCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlyphCanvasView.swift; sourceTree = "<group>"; };
+		8443BF9D2BB641B4003FC940 /* GlyphsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlyphsListView.swift; sourceTree = "<group>"; };
+		8443BFA02BB641D3003FC940 /* DrawingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsView.swift; sourceTree = "<group>"; };
+		8443BFA22BB641E8003FC940 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		8443BFA42BB641FA003FC940 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		8443BFA62BB6420B003FC940 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		8443BFA82BB64221003FC940 /* StoryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViews.swift; sourceTree = "<group>"; };
+		8443BFAA2BB64259003FC940 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		8443BFAC2BB6426D003FC940 /* DrawingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsViewModel.swift; sourceTree = "<group>"; };
+		8443BFAE2BB64282003FC940 /* GlyphsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlyphsListViewModel.swift; sourceTree = "<group>"; };
+		8443BFB02BB64298003FC940 /* NotePadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadViewModel.swift; sourceTree = "<group>"; };
+		8443BFB22BB642AA003FC940 /* SVGDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGDataStore.swift; sourceTree = "<group>"; };
+		8443BFBC2BB64362003FC940 /* 1-na-b{}i.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-na-b{}i.svg"; sourceTree = "<group>"; };
+		8443BFBD2BB64362003FC940 /* 1-wa-wa-aj-ni.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-wa-wa-aj-ni.svg"; sourceTree = "<group>"; };
+		8443BFBE2BB64362003FC940 /* 2-hi.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-hi.svg"; sourceTree = "<group>"; };
+		8443BFBF2BB64362003FC940 /* 1-o.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-o.svg"; sourceTree = "<group>"; };
+		8443BFC02BB64362003FC940 /* 1-tz{}a-pa-ji-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-tz{}a-pa-ji-ya.svg"; sourceTree = "<group>"; };
+		8443BFC12BB64362003FC940 /* 2-TAB{}-[yi].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-TAB{}-[yi].svg"; sourceTree = "<group>"; };
+		8443BFC22BB64362003FC940 /* 4--[la]-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "4--[la]-ja.svg"; sourceTree = "<group>"; };
+		8443BFC32BB64362003FC940 /* 0-NA@ka-KAN.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-NA@ka-KAN.svg"; sourceTree = "<group>"; };
+		8443BFC42BB64362003FC940 /* 1-xa-XAN-na.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-xa-XAN-na.svg"; sourceTree = "<group>"; };
+		8443BFC52BB64362003FC940 /* 3-cha-ki@CHAAN-na@$@cha-ki@KAAN-na.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-cha-ki@CHAAN-na@$@cha-ki@KAAN-na.svg"; sourceTree = "<group>"; };
+		8443BFC62BB64362003FC940 /* 1-sa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-sa.svg"; sourceTree = "<group>"; };
+		8443BFC72BB64362003FC940 /* 0-e.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-e.svg"; sourceTree = "<group>"; };
+		8443BFC82BB64362003FC940 /* 0-TA@OCH-le-{l}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-TA@OCH-le-{l}.svg"; sourceTree = "<group>"; };
+		8443BFC92BB64363003FC940 /* 3-tza-[ka].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-tza-[ka].svg"; sourceTree = "<group>"; };
+		8443BFCA2BB64363003FC940 /* 1-ma.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-ma.svg"; sourceTree = "<group>"; };
+		8443BFCB2BB64363003FC940 /* 0-tz{}a-pa-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-tz{}a-pa-ja.svg"; sourceTree = "<group>"; };
+		8443BFCC2BB64363003FC940 /* 1-e.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-e.svg"; sourceTree = "<group>"; };
+		8443BFCD2BB64363003FC940 /* 2-U@B{}A.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-U@B{}A.svg"; sourceTree = "<group>"; };
+		8443BFCE2BB64363003FC940 /* 4-a-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "4-a-ya.svg"; sourceTree = "<group>"; };
+		8443BFCF2BB64363003FC940 /* 49-CH{}UL$K{}UL@(CH{}UJUL$K{}UJUL).svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "49-CH{}UL$K{}UL@(CH{}UJUL$K{}UJUL).svg"; sourceTree = "<group>"; };
+		8443BFD02BB64363003FC940 /* 1-cha-ki.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-cha-ki.svg"; sourceTree = "<group>"; };
+		8443BFD12BB64363003FC940 /* 0--ji-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0--ji-ya.svg"; sourceTree = "<group>"; };
+		8443BFD22BB64363003FC940 /* 1-ka.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-ka.svg"; sourceTree = "<group>"; };
+		8443BFD32BB64363003FC940 /* 3-tz{}a-[pa]-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-tz{}a-[pa]-ja.svg"; sourceTree = "<group>"; };
+		8443BFD42BB64363003FC940 /* 2-k{}a-K{}AWIL.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-k{}a-K{}AWIL.svg"; sourceTree = "<group>"; };
+		8443BFD52BB64363003FC940 /* 0-AB{}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-AB{}.svg"; sourceTree = "<group>"; };
+		8443BFD62BB64363003FC940 /* 2-ta-ji.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-ta-ji.svg"; sourceTree = "<group>"; };
+		8443BFD72BB64363003FC940 /* 29-CHAK.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "29-CHAK.svg"; sourceTree = "<group>"; };
+		8443BFD82BB64363003FC940 /* 1-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-ya.svg"; sourceTree = "<group>"; };
+		8443BFD92BB64363003FC940 /* 2--la-ji.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2--la-ji.svg"; sourceTree = "<group>"; };
+		8443BFDA2BB64363003FC940 /* 3--il.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3--il.svg"; sourceTree = "<group>"; };
+		8443BFDB2BB64363003FC940 /* 0-K{}A@CHAAN-na.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-K{}A@CHAAN-na.svg"; sourceTree = "<group>"; };
+		8443BFDC2BB64363003FC940 /* 1-TA@yu-ta-{l}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-TA@yu-ta-{l}.svg"; sourceTree = "<group>"; };
+		8443BFDD2BB64363003FC940 /* 1-ch{}a-b{}a.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-ch{}a-b{}a.svg"; sourceTree = "<group>"; };
+		8443BFDE2BB64363003FC940 /* 0-tza.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-tza.svg"; sourceTree = "<group>"; };
+		8443BFDF2BB64363003FC940 /* 1-k{}a-K{}AK{}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-k{}a-K{}AK{}.svg"; sourceTree = "<group>"; };
+		8443BFE02BB64363003FC940 /* 1-pa-k{}a-ji-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-pa-k{}a-ji-ya.svg"; sourceTree = "<group>"; };
+		8443BFE12BB64363003FC940 /* 2-tza-[ka].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-tza-[ka].svg"; sourceTree = "<group>"; };
+		8443BFE22BB64363003FC940 /* 2-o.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-o.svg"; sourceTree = "<group>"; };
+		8443BFE32BB64364003FC940 /* 0-.@.@.@wi-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-.@.@.@wi-ya.svg"; sourceTree = "<group>"; };
+		8443BFE42BB64364003FC940 /* 0--la-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0--la-ja.svg"; sourceTree = "<group>"; };
+		8443BFE52BB64364003FC940 /* 1-TAB{}-[yi].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-TAB{}-[yi].svg"; sourceTree = "<group>"; };
+		8443BFE62BB64364003FC940 /* 3-ch{}a-ji.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-ch{}a-ji.svg"; sourceTree = "<group>"; };
+		8443BFE72BB64364003FC940 /* 1-U@.@.@.@wi.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-U@.@.@.@wi.svg"; sourceTree = "<group>"; };
+		8443BFE82BB64364003FC940 /* 3-e.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-e.svg"; sourceTree = "<group>"; };
+		8443BFE92BB64364003FC940 /* 2-tz{}a-[pa].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-tz{}a-[pa].svg"; sourceTree = "<group>"; };
+		8443BFEA2BB64364003FC940 /* 2-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-ya.svg"; sourceTree = "<group>"; };
+		8443BFEB2BB64364003FC940 /* 0-pa-k{}a.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-pa-k{}a.svg"; sourceTree = "<group>"; };
+		8443BFEC2BB64364003FC940 /* 1-AB{}-[b{}i].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-AB{}-[b{}i].svg"; sourceTree = "<group>"; };
+		8443BFED2BB64364003FC940 /* 3-TAB{}-[yi].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-TAB{}-[yi].svg"; sourceTree = "<group>"; };
+		8443BFEE2BB64364003FC940 /* 1--la-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1--la-ja.svg"; sourceTree = "<group>"; };
+		8443BFEF2BB64364003FC940 /* 4-B{}A@YAL.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "4-B{}A@YAL.svg"; sourceTree = "<group>"; };
+		8443BFF02BB64364003FC940 /* 0-.@.@.@ya-ni.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-.@.@.@ya-ni.svg"; sourceTree = "<group>"; };
+		8443BFF12BB64364003FC940 /* 2-sa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-sa.svg"; sourceTree = "<group>"; };
+		8443BFF22BB64364003FC940 /* 3-pa-ka-la.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-pa-ka-la.svg"; sourceTree = "<group>"; };
+		8443BFF32BB64364003FC940 /* 1-a-ja-wa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-a-ja-wa.svg"; sourceTree = "<group>"; };
+		8443BFF42BB64364003FC940 /* 0-b{}a.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-b{}a.svg"; sourceTree = "<group>"; };
+		8443BFF52BB64364003FC940 /* 3-wa-WA-ji.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-wa-WA-ji.svg"; sourceTree = "<group>"; };
+		8443BFF62BB64364003FC940 /* 0-TAB{}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-TAB{}.svg"; sourceTree = "<group>"; };
+		8443BFF72BB64364003FC940 /* 3-U@B{}A.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-U@B{}A.svg"; sourceTree = "<group>"; };
+		8443BFF82BB64364003FC940 /* 0-U@.@.@.@wa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-U@.@.@.@wa.svg"; sourceTree = "<group>"; };
+		8443BFF92BB64364003FC940 /* 2-ka.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-ka.svg"; sourceTree = "<group>"; };
+		8443BFFA2BB64364003FC940 /* 0-xa-ma-na.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-xa-ma-na.svg"; sourceTree = "<group>"; };
+		8443BFFB2BB64364003FC940 /* 1-tza.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-tza.svg"; sourceTree = "<group>"; };
+		8443BFFC2BB64364003FC940 /* 2-a-ku.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-a-ku.svg"; sourceTree = "<group>"; };
+		8443BFFD2BB64364003FC940 /* 2-na-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-na-ja.svg"; sourceTree = "<group>"; };
+		8443BFFE2BB64364003FC940 /* 0-cha-CHAN$ka-KAN.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-cha-CHAN$ka-KAN.svg"; sourceTree = "<group>"; };
+		8443BFFF2BB64364003FC940 /* 0--il.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0--il.svg"; sourceTree = "<group>"; };
+		8443C0002BB64365003FC940 /* 2-ma.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-ma.svg"; sourceTree = "<group>"; };
+		8443C0012BB64365003FC940 /* 2-cha-ki.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-cha-ki.svg"; sourceTree = "<group>"; };
+		8443C0022BB64365003FC940 /* 3-o.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-o.svg"; sourceTree = "<group>"; };
+		8443C0032BB64365003FC940 /* 0-ka.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-ka.svg"; sourceTree = "<group>"; };
+		8443C0042BB64365003FC940 /* 2-xa$XA.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-xa$XA.svg"; sourceTree = "<group>"; };
+		8443C0052BB64365003FC940 /* 2-wa-wa-aj-ni.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-wa-wa-aj-ni.svg"; sourceTree = "<group>"; };
+		8443C0062BB64365003FC940 /* 2--il.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2--il.svg"; sourceTree = "<group>"; };
+		8443C0072BB64365003FC940 /* 0-sa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-sa.svg"; sourceTree = "<group>"; };
+		8443C0082BB64365003FC940 /* 4--il.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "4--il.svg"; sourceTree = "<group>"; };
+		8443C0092BB64365003FC940 /* 3-xa$XA.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-xa$XA.svg"; sourceTree = "<group>"; };
+		8443C00A2BB64365003FC940 /* 3-B{}A@u-xu-[lu].svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-B{}A@u-xu-[lu].svg"; sourceTree = "<group>"; };
+		8443C00B2BB64365003FC940 /* 0-ma.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-ma.svg"; sourceTree = "<group>"; };
+		8443C00C2BB64365003FC940 /* 1--ji-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1--ji-ya.svg"; sourceTree = "<group>"; };
+		8443C00D2BB64365003FC940 /* 3-sa-aj-mi-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-sa-aj-mi-ya.svg"; sourceTree = "<group>"; };
+		8443C00E2BB64365003FC940 /* 1-B{}A@AJAW.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1-B{}A@AJAW.svg"; sourceTree = "<group>"; };
+		8443C00F2BB64365003FC940 /* 3-na-ja-yi.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-na-ja-yi.svg"; sourceTree = "<group>"; };
+		8443C0102BB64365003FC940 /* 34-JOL-lo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "34-JOL-lo.svg"; sourceTree = "<group>"; };
+		8443C0112BB64365003FC940 /* 1--il.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1--il.svg"; sourceTree = "<group>"; };
+		8443C0122BB64365003FC940 /* 3-a-li-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-a-li-ya.svg"; sourceTree = "<group>"; };
+		8443C0132BB64365003FC940 /* 3-JA{}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-JA{}.svg"; sourceTree = "<group>"; };
+		8443C0142BB64365003FC940 /* 3-ma.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-ma.svg"; sourceTree = "<group>"; };
+		8443C0152BB64365003FC940 /* 3--[la]-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3--[la]-ja.svg"; sourceTree = "<group>"; };
+		8443C0162BB64365003FC940 /* 3-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-ja.svg"; sourceTree = "<group>"; };
+		8443C0172BB64365003FC940 /* 0-a-AK{}OT-ta.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-a-AK{}OT-ta.svg"; sourceTree = "<group>"; };
+		8443C0182BB64365003FC940 /* 3-ya.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-ya.svg"; sourceTree = "<group>"; };
+		8443C0192BB64365003FC940 /* 0-ch{}a.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-ch{}a.svg"; sourceTree = "<group>"; };
+		8443C01A2BB64365003FC940 /* 2-ch{}a-ja-{l}-te{}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-ch{}a-ja-{l}-te{}.svg"; sourceTree = "<group>"; };
+		8443C01B2BB64365003FC940 /* 3-ta-ki.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-ta-ki.svg"; sourceTree = "<group>"; };
+		8443C01C2BB64365003FC940 /* 3-k{}a-li.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "3-k{}a-li.svg"; sourceTree = "<group>"; };
+		8443C01D2BB64366003FC940 /* 2-pa-ka-b{}a.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-pa-ka-b{}a.svg"; sourceTree = "<group>"; };
+		8443C01E2BB64366003FC940 /* 2-ja.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-ja.svg"; sourceTree = "<group>"; };
+		8443C01F2BB64366003FC940 /* 2-B{}A@ch{}o-ko.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-B{}A@ch{}o-ko.svg"; sourceTree = "<group>"; };
+		8443C0202BB64366003FC940 /* 39-IN@KAB{}.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "39-IN@KAB{}.svg"; sourceTree = "<group>"; };
+		8443C0212BB64366003FC940 /* 2-e.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2-e.svg"; sourceTree = "<group>"; };
+		8443C0222BB64366003FC940 /* 0-o.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0-o.svg"; sourceTree = "<group>"; };
+		8443C0232BB64366003FC940 /* 4-ch{}a-jo-ma.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "4-ch{}a-jo-ma.svg"; sourceTree = "<group>"; };
+		8443C08D2BB64379003FC940 /* svg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = svg.json; sourceTree = "<group>"; };
+		8443C08F2BB643B8003FC940 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		84E058A02CF27E0A00FA1321 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		84E058A12CF27E5B00FA1321 /* Ink-of-The-Ancient-Stones-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ink-of-The-Ancient-Stones-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +352,10 @@
 		8443BF382BB63AAB003FC940 = {
 			isa = PBXGroup;
 			children = (
+				8441438A2C308D3A007BA2BE /* readme.md */,
+				84E058A12CF27E5B00FA1321 /* Ink-of-The-Ancient-Stones-Info.plist */,
+				84E058A02CF27E0A00FA1321 /* PrivacyInfo.xcprivacy */,
+				8443C0952BB745A5003FC940 /* Resources */,
 				8443BF432BB63AAB003FC940 /* Ink of The Ancient Stones */,
 				8443BF422BB63AAB003FC940 /* Products */,
 			);
@@ -51,7 +372,13 @@
 		8443BF432BB63AAB003FC940 /* Ink of The Ancient Stones */ = {
 			isa = PBXGroup;
 			children = (
-				8443BF442BB63AAB003FC940 /* Ink_of_The_Ancient_StonesApp.swift */,
+				8443BF572BB63AF0003FC940 /* ViewModel */,
+				8443BF562BB63AEA003FC940 /* View */,
+				8443BF552BB63ADE003FC940 /* Model */,
+				8443BF542BB63AD9003FC940 /* Labels */,
+				8443BF532BB63AD2003FC940 /* Extension */,
+				8443BF522BB63ACB003FC940 /* Component */,
+				8443BF442BB63AAB003FC940 /* MyApp.swift */,
 				8443BF462BB63AAB003FC940 /* ContentView.swift */,
 				8443BF482BB63AAC003FC940 /* Assets.xcassets */,
 				8443BF4A2BB63AAC003FC940 /* Preview Content */,
@@ -65,6 +392,267 @@
 				8443BF4B2BB63AAC003FC940 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8443BF522BB63ACB003FC940 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF6C2BB63DD6003FC940 /* Pages */,
+				8443BF5A2BB63B49003FC940 /* CustomAlertView.swift */,
+				8443BF5C2BB63D2A003FC940 /* CustomButton.swift */,
+				8443BF5E2BB63D46003FC940 /* CustomPageButton.swift */,
+				8443BF602BB63D5C003FC940 /* InfoView.swift */,
+				8443BF622BB63D75003FC940 /* NotePad.swift */,
+				8443BF642BB63D8E003FC940 /* ScoreView.swift */,
+				8443BF662BB63DA1003FC940 /* Stars.swift */,
+				8443BF682BB63DB6003FC940 /* ToolPicker.swift */,
+				8443BF6A2BB63DC9003FC940 /* UndoRedoToolbar.swift */,
+				8441438E2C309B1D007BA2BE /* CustomBackButton.swift */,
+				844143982C30B42A007BA2BE /* MuteButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8443BF532BB63AD2003FC940 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF772BB63E51003FC940 /* CGImagePropertyOrientation.swift */,
+				8443BF792BB63E65003FC940 /* CGPoint.swift */,
+				8443BF7B2BB63E75003FC940 /* Color.swift */,
+				8443BF7D2BB63E8A003FC940 /* iPadFontSize.swift */,
+				8443BF7F2BB63E9D003FC940 /* UIImage.swift */,
+				8443BF812BB63EAF003FC940 /* UIScreen.swift */,
+				8443BF832BB63EC5003FC940 /* VNClassificationObservation.swift */,
+				8441438C2C3098E0007BA2BE /* UINavigationController.swift */,
+				844143902C30A23E007BA2BE /* Data.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8443BF542BB63AD9003FC940 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF852BB63EDE003FC940 /* CustomColors.swift */,
+				8443BF872BB63EF0003FC940 /* CustomFonts.swift */,
+				8443BF892BB63F15003FC940 /* MayanGlyphs.swift */,
+				8443BF8B2BB63F28003FC940 /* StoryPart.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		8443BF552BB63ADE003FC940 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF962BB64159003FC940 /* Vision */,
+				8443BF8F2BB63F4F003FC940 /* SVG */,
+				8443BF8D2BB63F42003FC940 /* MayanScript.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8443BF562BB63AEA003FC940 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF9F2BB641C3003FC940 /* Storytelling */,
+				8443BF992BB64190003FC940 /* GlyphCanvasStoryView.swift */,
+				8443BF9B2BB641A0003FC940 /* GlyphCanvasView.swift */,
+				8443BF9D2BB641B4003FC940 /* GlyphsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8443BF572BB63AF0003FC940 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8443BFAA2BB64259003FC940 /* AudioManager.swift */,
+				8443BFAC2BB6426D003FC940 /* DrawingsViewModel.swift */,
+				8443BFAE2BB64282003FC940 /* GlyphsListViewModel.swift */,
+				8443BFB02BB64298003FC940 /* NotePadViewModel.swift */,
+				8443BFB22BB642AA003FC940 /* SVGDataStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8443BF6C2BB63DD6003FC940 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF6D2BB63DE2003FC940 /* ModelPages.swift */,
+				8443BF6F2BB63DF6003FC940 /* PageControl.swift */,
+				8443BF712BB63E08003FC940 /* Pages.swift */,
+				8443BF732BB63E24003FC940 /* PagesBuilder.swift */,
+				8443BF752BB63E2F003FC940 /* PageViewController.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		8443BF8F2BB63F4F003FC940 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF902BB63F61003FC940 /* SVGParser.swift */,
+				8443BF922BB63F87003FC940 /* SVGPath.swift */,
+				8443BF942BB63FA2003FC940 /* SVGPathView.swift */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		8443BF962BB64159003FC940 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				8443BF972BB64166003FC940 /* ImageComparator.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		8443BF9F2BB641C3003FC940 /* Storytelling */ = {
+			isa = PBXGroup;
+			children = (
+				8443BFA02BB641D3003FC940 /* DrawingsView.swift */,
+				8443BFA22BB641E8003FC940 /* EndView.swift */,
+				8443BFA42BB641FA003FC940 /* IntroView.swift */,
+				8443BFA62BB6420B003FC940 /* MenuView.swift */,
+				8443BFA82BB64221003FC940 /* StoryViews.swift */,
+			);
+			path = Storytelling;
+			sourceTree = "<group>";
+		};
+		8443BFB72BB642FE003FC940 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				844143932C30B2DA007BA2BE /* Poppins-Bold.ttf */,
+				844143922C30B2DA007BA2BE /* Poppins-Italic.ttf */,
+				844143942C30B2DA007BA2BE /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8443BFBB2BB64356003FC940 /* Glyphs */ = {
+			isa = PBXGroup;
+			children = (
+				8443BFFF2BB64364003FC940 /* 0--il.svg */,
+				8443BFD12BB64363003FC940 /* 0--ji-ya.svg */,
+				8443BFE42BB64364003FC940 /* 0--la-ja.svg */,
+				8443BFE32BB64364003FC940 /* 0-.@.@.@wi-ya.svg */,
+				8443BFF02BB64364003FC940 /* 0-.@.@.@ya-ni.svg */,
+				8443C0172BB64365003FC940 /* 0-a-AK{}OT-ta.svg */,
+				8443BFD52BB64363003FC940 /* 0-AB{}.svg */,
+				8443BFF42BB64364003FC940 /* 0-b{}a.svg */,
+				8443C0192BB64365003FC940 /* 0-ch{}a.svg */,
+				8443BFFE2BB64364003FC940 /* 0-cha-CHAN$ka-KAN.svg */,
+				8443BFC72BB64362003FC940 /* 0-e.svg */,
+				8443BFDB2BB64363003FC940 /* 0-K{}A@CHAAN-na.svg */,
+				8443C0032BB64365003FC940 /* 0-ka.svg */,
+				8443C00B2BB64365003FC940 /* 0-ma.svg */,
+				8443BFC32BB64362003FC940 /* 0-NA@ka-KAN.svg */,
+				8443C0222BB64366003FC940 /* 0-o.svg */,
+				8443BFEB2BB64364003FC940 /* 0-pa-k{}a.svg */,
+				8443C0072BB64365003FC940 /* 0-sa.svg */,
+				8443BFC82BB64362003FC940 /* 0-TA@OCH-le-{l}.svg */,
+				8443BFF62BB64364003FC940 /* 0-TAB{}.svg */,
+				8443BFCB2BB64363003FC940 /* 0-tz{}a-pa-ja.svg */,
+				8443BFDE2BB64363003FC940 /* 0-tza.svg */,
+				8443BFF82BB64364003FC940 /* 0-U@.@.@.@wa.svg */,
+				8443BFFA2BB64364003FC940 /* 0-xa-ma-na.svg */,
+				8443C0112BB64365003FC940 /* 1--il.svg */,
+				8443C00C2BB64365003FC940 /* 1--ji-ya.svg */,
+				8443BFEE2BB64364003FC940 /* 1--la-ja.svg */,
+				8443BFF32BB64364003FC940 /* 1-a-ja-wa.svg */,
+				8443BFEC2BB64364003FC940 /* 1-AB{}-[b{}i].svg */,
+				8443C00E2BB64365003FC940 /* 1-B{}A@AJAW.svg */,
+				8443BFDD2BB64363003FC940 /* 1-ch{}a-b{}a.svg */,
+				8443BFD02BB64363003FC940 /* 1-cha-ki.svg */,
+				8443BFCC2BB64363003FC940 /* 1-e.svg */,
+				8443BFDF2BB64363003FC940 /* 1-k{}a-K{}AK{}.svg */,
+				8443BFD22BB64363003FC940 /* 1-ka.svg */,
+				8443BFCA2BB64363003FC940 /* 1-ma.svg */,
+				8443BFBC2BB64362003FC940 /* 1-na-b{}i.svg */,
+				8443BFBF2BB64362003FC940 /* 1-o.svg */,
+				8443BFE02BB64363003FC940 /* 1-pa-k{}a-ji-ya.svg */,
+				8443BFC62BB64362003FC940 /* 1-sa.svg */,
+				8443BFDC2BB64363003FC940 /* 1-TA@yu-ta-{l}.svg */,
+				8443BFE52BB64364003FC940 /* 1-TAB{}-[yi].svg */,
+				8443BFC02BB64362003FC940 /* 1-tz{}a-pa-ji-ya.svg */,
+				8443BFFB2BB64364003FC940 /* 1-tza.svg */,
+				8443BFE72BB64364003FC940 /* 1-U@.@.@.@wi.svg */,
+				8443BFBD2BB64362003FC940 /* 1-wa-wa-aj-ni.svg */,
+				8443BFC42BB64362003FC940 /* 1-xa-XAN-na.svg */,
+				8443BFD82BB64363003FC940 /* 1-ya.svg */,
+				8443C0062BB64365003FC940 /* 2--il.svg */,
+				8443BFD92BB64363003FC940 /* 2--la-ji.svg */,
+				8443BFFC2BB64364003FC940 /* 2-a-ku.svg */,
+				8443C01F2BB64366003FC940 /* 2-B{}A@ch{}o-ko.svg */,
+				8443C01A2BB64365003FC940 /* 2-ch{}a-ja-{l}-te{}.svg */,
+				8443C0012BB64365003FC940 /* 2-cha-ki.svg */,
+				8443C0212BB64366003FC940 /* 2-e.svg */,
+				8443BFBE2BB64362003FC940 /* 2-hi.svg */,
+				8443C01E2BB64366003FC940 /* 2-ja.svg */,
+				8443BFD42BB64363003FC940 /* 2-k{}a-K{}AWIL.svg */,
+				8443BFF92BB64364003FC940 /* 2-ka.svg */,
+				8443C0002BB64365003FC940 /* 2-ma.svg */,
+				8443BFFD2BB64364003FC940 /* 2-na-ja.svg */,
+				8443BFE22BB64363003FC940 /* 2-o.svg */,
+				8443C01D2BB64366003FC940 /* 2-pa-ka-b{}a.svg */,
+				8443BFF12BB64364003FC940 /* 2-sa.svg */,
+				8443BFD62BB64363003FC940 /* 2-ta-ji.svg */,
+				8443BFC12BB64362003FC940 /* 2-TAB{}-[yi].svg */,
+				8443BFE92BB64364003FC940 /* 2-tz{}a-[pa].svg */,
+				8443BFE12BB64363003FC940 /* 2-tza-[ka].svg */,
+				8443BFCD2BB64363003FC940 /* 2-U@B{}A.svg */,
+				8443C0052BB64365003FC940 /* 2-wa-wa-aj-ni.svg */,
+				8443C0042BB64365003FC940 /* 2-xa$XA.svg */,
+				8443BFEA2BB64364003FC940 /* 2-ya.svg */,
+				8443C0152BB64365003FC940 /* 3--[la]-ja.svg */,
+				8443BFDA2BB64363003FC940 /* 3--il.svg */,
+				8443C0122BB64365003FC940 /* 3-a-li-ya.svg */,
+				8443C00A2BB64365003FC940 /* 3-B{}A@u-xu-[lu].svg */,
+				8443BFE62BB64364003FC940 /* 3-ch{}a-ji.svg */,
+				8443BFC52BB64362003FC940 /* 3-cha-ki@CHAAN-na@$@cha-ki@KAAN-na.svg */,
+				8443BFE82BB64364003FC940 /* 3-e.svg */,
+				8443C0162BB64365003FC940 /* 3-ja.svg */,
+				8443C0132BB64365003FC940 /* 3-JA{}.svg */,
+				8443C01C2BB64365003FC940 /* 3-k{}a-li.svg */,
+				8443C0142BB64365003FC940 /* 3-ma.svg */,
+				8443C00F2BB64365003FC940 /* 3-na-ja-yi.svg */,
+				8443C0022BB64365003FC940 /* 3-o.svg */,
+				8443BFF22BB64364003FC940 /* 3-pa-ka-la.svg */,
+				8443C00D2BB64365003FC940 /* 3-sa-aj-mi-ya.svg */,
+				8443C01B2BB64365003FC940 /* 3-ta-ki.svg */,
+				8443BFED2BB64364003FC940 /* 3-TAB{}-[yi].svg */,
+				8443BFD32BB64363003FC940 /* 3-tz{}a-[pa]-ja.svg */,
+				8443BFC92BB64363003FC940 /* 3-tza-[ka].svg */,
+				8443BFF72BB64364003FC940 /* 3-U@B{}A.svg */,
+				8443BFF52BB64364003FC940 /* 3-wa-WA-ji.svg */,
+				8443C0092BB64365003FC940 /* 3-xa$XA.svg */,
+				8443C0182BB64365003FC940 /* 3-ya.svg */,
+				8443BFC22BB64362003FC940 /* 4--[la]-ja.svg */,
+				8443C0082BB64365003FC940 /* 4--il.svg */,
+				8443BFCE2BB64363003FC940 /* 4-a-ya.svg */,
+				8443BFEF2BB64364003FC940 /* 4-B{}A@YAL.svg */,
+				8443C0232BB64366003FC940 /* 4-ch{}a-jo-ma.svg */,
+				8443BFD72BB64363003FC940 /* 29-CHAK.svg */,
+				8443C0102BB64365003FC940 /* 34-JOL-lo.svg */,
+				8443C0202BB64366003FC940 /* 39-IN@KAB{}.svg */,
+				8443BFCF2BB64363003FC940 /* 49-CH{}UL$K{}UL@(CH{}UJUL$K{}UJUL).svg */,
+			);
+			path = Glyphs;
+			sourceTree = "<group>";
+		};
+		8443C08C2BB6436D003FC940 /* Glyphs Info */ = {
+			isa = PBXGroup;
+			children = (
+				8443C08D2BB64379003FC940 /* svg.json */,
+			);
+			path = "Glyphs Info";
+			sourceTree = "<group>";
+		};
+		8443C0952BB745A5003FC940 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8443C08F2BB643B8003FC940 /* music.mp3 */,
+				8443C08C2BB6436D003FC940 /* Glyphs Info */,
+				8443BFBB2BB64356003FC940 /* Glyphs */,
+				8443BFB72BB642FE003FC940 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +713,119 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8443C08A2BB64366003FC940 /* 0-o.svg in Resources */,
+				8443C0272BB64366003FC940 /* 1-o.svg in Resources */,
+				8443C0752BB64366003FC940 /* 3-sa-aj-mi-ya.svg in Resources */,
+				8443C06B2BB64366003FC940 /* 0-ka.svg in Resources */,
+				8443C0852BB64366003FC940 /* 2-pa-ka-b{}a.svg in Resources */,
+				8443C0282BB64366003FC940 /* 1-tz{}a-pa-ji-ya.svg in Resources */,
+				8443C0422BB64366003FC940 /* 3--il.svg in Resources */,
+				8443C0822BB64366003FC940 /* 2-ch{}a-ja-{l}-te{}.svg in Resources */,
+				8443C08E2BB64379003FC940 /* svg.json in Resources */,
+				8443C0482BB64366003FC940 /* 1-pa-k{}a-ji-ya.svg in Resources */,
+				8443C03C2BB64366003FC940 /* 2-k{}a-K{}AWIL.svg in Resources */,
+				8443C0602BB64366003FC940 /* 0-U@.@.@.@wa.svg in Resources */,
+				8443C0522BB64366003FC940 /* 2-ya.svg in Resources */,
+				8443C0452BB64366003FC940 /* 1-ch{}a-b{}a.svg in Resources */,
+				8443C0672BB64366003FC940 /* 0--il.svg in Resources */,
+				8443C0412BB64366003FC940 /* 2--la-ji.svg in Resources */,
+				8443C05F2BB64366003FC940 /* 3-U@B{}A.svg in Resources */,
+				8443C04A2BB64366003FC940 /* 2-o.svg in Resources */,
+				844143952C30B2DA007BA2BE /* Poppins-Italic.ttf in Resources */,
+				8443C07E2BB64366003FC940 /* 3-ja.svg in Resources */,
+				8443C05E2BB64366003FC940 /* 0-TAB{}.svg in Resources */,
+				8443C0382BB64366003FC940 /* 1-cha-ki.svg in Resources */,
+				8443C0582BB64366003FC940 /* 0-.@.@.@ya-ni.svg in Resources */,
+				844143972C30B2DA007BA2BE /* Poppins-Regular.ttf in Resources */,
+				8443C0242BB64366003FC940 /* 1-na-b{}i.svg in Resources */,
+				8443C0342BB64366003FC940 /* 1-e.svg in Resources */,
+				8443C0462BB64366003FC940 /* 0-tza.svg in Resources */,
+				8443C05C2BB64366003FC940 /* 0-b{}a.svg in Resources */,
+				8443C0492BB64366003FC940 /* 2-tza-[ka].svg in Resources */,
+				8443C0772BB64366003FC940 /* 3-na-ja-yi.svg in Resources */,
+				8443C03F2BB64366003FC940 /* 29-CHAK.svg in Resources */,
+				8443C04D2BB64366003FC940 /* 1-TAB{}-[yi].svg in Resources */,
+				8443C0332BB64366003FC940 /* 0-tz{}a-pa-ja.svg in Resources */,
+				8443C0882BB64366003FC940 /* 39-IN@KAB{}.svg in Resources */,
+				8443C0392BB64366003FC940 /* 0--ji-ya.svg in Resources */,
+				8443C03D2BB64366003FC940 /* 0-AB{}.svg in Resources */,
+				8443C0352BB64366003FC940 /* 2-U@B{}A.svg in Resources */,
+				8443C05B2BB64366003FC940 /* 1-a-ja-wa.svg in Resources */,
+				8443C0432BB64366003FC940 /* 0-K{}A@CHAAN-na.svg in Resources */,
+				8443C04C2BB64366003FC940 /* 0--la-ja.svg in Resources */,
+				8443C0632BB64366003FC940 /* 1-tza.svg in Resources */,
+				8443C0542BB64366003FC940 /* 1-AB{}-[b{}i].svg in Resources */,
+				8443C03B2BB64366003FC940 /* 3-tz{}a-[pa]-ja.svg in Resources */,
+				8443C0592BB64366003FC940 /* 2-sa.svg in Resources */,
+				8443C03A2BB64366003FC940 /* 1-ka.svg in Resources */,
+				8443C02F2BB64366003FC940 /* 0-e.svg in Resources */,
+				8443C08B2BB64366003FC940 /* 4-ch{}a-jo-ma.svg in Resources */,
+				8443C06A2BB64366003FC940 /* 3-o.svg in Resources */,
+				84E058A22CF27E5B00FA1321 /* Ink-of-The-Ancient-Stones-Info.plist in Resources */,
+				8443C0872BB64366003FC940 /* 2-B{}A@ch{}o-ko.svg in Resources */,
+				8443C02C2BB64366003FC940 /* 1-xa-XAN-na.svg in Resources */,
+				8443C0362BB64366003FC940 /* 4-a-ya.svg in Resources */,
+				8443C0722BB64366003FC940 /* 3-B{}A@u-xu-[lu].svg in Resources */,
+				8443C06D2BB64366003FC940 /* 2-wa-wa-aj-ni.svg in Resources */,
+				8443C0622BB64366003FC940 /* 0-xa-ma-na.svg in Resources */,
+				8443C0512BB64366003FC940 /* 2-tz{}a-[pa].svg in Resources */,
+				8443C0862BB64366003FC940 /* 2-ja.svg in Resources */,
+				8443C0662BB64366003FC940 /* 0-cha-CHAN$ka-KAN.svg in Resources */,
+				8443C07F2BB64366003FC940 /* 0-a-AK{}OT-ta.svg in Resources */,
+				8443C0902BB643B8003FC940 /* music.mp3 in Resources */,
+				8443C0802BB64366003FC940 /* 3-ya.svg in Resources */,
+				8443C0322BB64366003FC940 /* 1-ma.svg in Resources */,
+				8443C0502BB64366003FC940 /* 3-e.svg in Resources */,
+				8443C07C2BB64366003FC940 /* 3-ma.svg in Resources */,
+				8443C02D2BB64366003FC940 /* 3-cha-ki@CHAAN-na@$@cha-ki@KAAN-na.svg in Resources */,
+				8443C0552BB64366003FC940 /* 3-TAB{}-[yi].svg in Resources */,
+				8443C0292BB64366003FC940 /* 2-TAB{}-[yi].svg in Resources */,
+				8443C04F2BB64366003FC940 /* 1-U@.@.@.@wi.svg in Resources */,
+				8443C0472BB64366003FC940 /* 1-k{}a-K{}AK{}.svg in Resources */,
+				8443C0842BB64366003FC940 /* 3-k{}a-li.svg in Resources */,
 				8443BF4C2BB63AAC003FC940 /* Preview Assets.xcassets in Resources */,
+				8443C02E2BB64366003FC940 /* 1-sa.svg in Resources */,
+				8443C0892BB64366003FC940 /* 2-e.svg in Resources */,
+				8443C0252BB64366003FC940 /* 1-wa-wa-aj-ni.svg in Resources */,
+				8443C04E2BB64366003FC940 /* 3-ch{}a-ji.svg in Resources */,
+				844143962C30B2DA007BA2BE /* Poppins-Bold.ttf in Resources */,
+				8443C02A2BB64366003FC940 /* 4--[la]-ja.svg in Resources */,
+				8443C0262BB64366003FC940 /* 2-hi.svg in Resources */,
+				8443C0652BB64366003FC940 /* 2-na-ja.svg in Resources */,
+				8443C0742BB64366003FC940 /* 1--ji-ya.svg in Resources */,
+				8443C0692BB64366003FC940 /* 2-cha-ki.svg in Resources */,
+				8443C0682BB64366003FC940 /* 2-ma.svg in Resources */,
+				8443C0792BB64366003FC940 /* 1--il.svg in Resources */,
+				8441438B2C308D3A007BA2BE /* readme.md in Resources */,
+				8443C0832BB64366003FC940 /* 3-ta-ki.svg in Resources */,
+				8443C0612BB64366003FC940 /* 2-ka.svg in Resources */,
+				8443C07A2BB64366003FC940 /* 3-a-li-ya.svg in Resources */,
+				8443C0372BB64366003FC940 /* 49-CH{}UL$K{}UL@(CH{}UJUL$K{}UJUL).svg in Resources */,
+				8443C06C2BB64366003FC940 /* 2-xa$XA.svg in Resources */,
+				8443C0312BB64366003FC940 /* 3-tza-[ka].svg in Resources */,
+				8443C07B2BB64366003FC940 /* 3-JA{}.svg in Resources */,
+				8443C0812BB64366003FC940 /* 0-ch{}a.svg in Resources */,
+				8443C0762BB64366003FC940 /* 1-B{}A@AJAW.svg in Resources */,
+				8443C0712BB64366003FC940 /* 3-xa$XA.svg in Resources */,
+				8443C0732BB64366003FC940 /* 0-ma.svg in Resources */,
+				8443C06E2BB64366003FC940 /* 2--il.svg in Resources */,
+				8443C03E2BB64366003FC940 /* 2-ta-ji.svg in Resources */,
+				8443C0562BB64366003FC940 /* 1--la-ja.svg in Resources */,
+				8443C0702BB64366003FC940 /* 4--il.svg in Resources */,
+				8443C0782BB64366003FC940 /* 34-JOL-lo.svg in Resources */,
+				8443C02B2BB64366003FC940 /* 0-NA@ka-KAN.svg in Resources */,
+				8443C0442BB64366003FC940 /* 1-TA@yu-ta-{l}.svg in Resources */,
+				8443C0642BB64366003FC940 /* 2-a-ku.svg in Resources */,
+				8443C0402BB64366003FC940 /* 1-ya.svg in Resources */,
+				8443C0532BB64366003FC940 /* 0-pa-k{}a.svg in Resources */,
+				8443C0572BB64366003FC940 /* 4-B{}A@YAL.svg in Resources */,
 				8443BF492BB63AAC003FC940 /* Assets.xcassets in Resources */,
+				8443C0302BB64366003FC940 /* 0-TA@OCH-le-{l}.svg in Resources */,
+				8443C05D2BB64366003FC940 /* 3-wa-WA-ji.svg in Resources */,
+				8443C05A2BB64366003FC940 /* 3-pa-ka-la.svg in Resources */,
+				8443C04B2BB64366003FC940 /* 0-.@.@.@wi-ya.svg in Resources */,
+				8443C07D2BB64366003FC940 /* 3--[la]-ja.svg in Resources */,
+				8443C06F2BB64366003FC940 /* 0-sa.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +836,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8443BF5D2BB63D2A003FC940 /* CustomButton.swift in Sources */,
+				8443BF672BB63DA1003FC940 /* Stars.swift in Sources */,
+				8443BF652BB63D8E003FC940 /* ScoreView.swift in Sources */,
+				8443BF8E2BB63F42003FC940 /* MayanScript.swift in Sources */,
+				8443BF9E2BB641B4003FC940 /* GlyphsListView.swift in Sources */,
+				8443BF702BB63DF6003FC940 /* PageControl.swift in Sources */,
+				8443BF912BB63F61003FC940 /* SVGParser.swift in Sources */,
+				8443BFA72BB6420B003FC940 /* MenuView.swift in Sources */,
+				8443BF7A2BB63E65003FC940 /* CGPoint.swift in Sources */,
+				8443BF722BB63E08003FC940 /* Pages.swift in Sources */,
+				8443BF802BB63E9D003FC940 /* UIImage.swift in Sources */,
+				8443BF882BB63EF0003FC940 /* CustomFonts.swift in Sources */,
+				8443BF842BB63EC5003FC940 /* VNClassificationObservation.swift in Sources */,
+				8443BF982BB64166003FC940 /* ImageComparator.swift in Sources */,
+				8443BFA52BB641FA003FC940 /* IntroView.swift in Sources */,
+				8443BF932BB63F87003FC940 /* SVGPath.swift in Sources */,
+				8443BF5B2BB63B49003FC940 /* CustomAlertView.swift in Sources */,
+				8443BFAD2BB6426D003FC940 /* DrawingsViewModel.swift in Sources */,
+				8443BF742BB63E24003FC940 /* PagesBuilder.swift in Sources */,
+				8443BFA92BB64221003FC940 /* StoryViews.swift in Sources */,
+				8443BF862BB63EDE003FC940 /* CustomColors.swift in Sources */,
+				8443BFAB2BB64259003FC940 /* AudioManager.swift in Sources */,
+				8443BF6E2BB63DE2003FC940 /* ModelPages.swift in Sources */,
+				8443BFAF2BB64282003FC940 /* GlyphsListViewModel.swift in Sources */,
+				8443BF952BB63FA2003FC940 /* SVGPathView.swift in Sources */,
+				8443BF8C2BB63F28003FC940 /* StoryPart.swift in Sources */,
+				8443BF7E2BB63E8A003FC940 /* iPadFontSize.swift in Sources */,
+				8443BF6B2BB63DC9003FC940 /* UndoRedoToolbar.swift in Sources */,
+				8443BFB12BB64298003FC940 /* NotePadViewModel.swift in Sources */,
+				8443BF9C2BB641A0003FC940 /* GlyphCanvasView.swift in Sources */,
+				8441438F2C309B1D007BA2BE /* CustomBackButton.swift in Sources */,
+				844143912C30A23E007BA2BE /* Data.swift in Sources */,
+				8443BFA12BB641D3003FC940 /* DrawingsView.swift in Sources */,
+				8443BF632BB63D75003FC940 /* NotePad.swift in Sources */,
+				8443BF7C2BB63E75003FC940 /* Color.swift in Sources */,
+				8443BF8A2BB63F15003FC940 /* MayanGlyphs.swift in Sources */,
 				8443BF472BB63AAB003FC940 /* ContentView.swift in Sources */,
-				8443BF452BB63AAB003FC940 /* Ink_of_The_Ancient_StonesApp.swift in Sources */,
+				8443BFB32BB642AA003FC940 /* SVGDataStore.swift in Sources */,
+				8443BF9A2BB64190003FC940 /* GlyphCanvasStoryView.swift in Sources */,
+				8443BF5F2BB63D46003FC940 /* CustomPageButton.swift in Sources */,
+				8443BF612BB63D5C003FC940 /* InfoView.swift in Sources */,
+				8441438D2C3098E0007BA2BE /* UINavigationController.swift in Sources */,
+				8443BF822BB63EAF003FC940 /* UIScreen.swift in Sources */,
+				8443BF452BB63AAB003FC940 /* MyApp.swift in Sources */,
+				8443BF692BB63DB6003FC940 /* ToolPicker.swift in Sources */,
+				8443BF782BB63E51003FC940 /* CGImagePropertyOrientation.swift in Sources */,
+				8443BFA32BB641E8003FC940 /* EndView.swift in Sources */,
+				8443BF762BB63E2F003FC940 /* PageViewController.swift in Sources */,
+				844143992C30B42A007BA2BE /* MuteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +1021,13 @@
 				DEVELOPMENT_TEAM = J74996J2KY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ink-of-The-Ancient-Stones-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ancient Stones";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +1035,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ADA.Ink-of-The-Ancient-Stones";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -304,11 +1055,13 @@
 				DEVELOPMENT_TEAM = J74996J2KY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ink-of-The-Ancient-Stones-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ancient Stones";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +1069,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ADA.Ink-of-The-Ancient-Stones";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

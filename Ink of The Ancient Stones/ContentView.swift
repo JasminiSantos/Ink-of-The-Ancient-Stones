@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var audioManager: AudioManager = AudioManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            StoryViews()
+                .edgesIgnoringSafeArea(.all)
+                .onAppear {
+                    UINavigationController().viewDidLoad()
+                    audioManager.playSound(.background)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        MuteButton(isMuted: $audioManager.isMuted)
+                    }
+                }
         }
-        .padding()
+        .accentColor(CustomColors.customBrown.color)
+        .environmentObject(audioManager)
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -8,7 +8,13 @@
 import SwiftUI
 
 @main
-struct Ink_of_The_Ancient_StonesApp: App {
+struct MyApp: App {
+    
+    init() {
+        try! UIFont.registerFonts(withExtension: "ttf")
+        try! UIFont.registerFonts(withExtension: "otf")
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
